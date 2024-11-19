@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-button {
+    background-color: #4a2088;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #351763;
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    background-color: #54239c;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.cycle-counter {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.timer-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #4a2088;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.timer-text {
+    font-size: 2rem;
+    margin: 20px 0;
+    animation: fade-in 0.5s ease;
+}
+
+.control-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4a2088;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: #9453c3;
+    color: #fff;
+}
+
+.control-button.reset {
+    background-color: #f44336;
+}
+
+.control-button.reset:hover {
+    background-color: #d32f2f;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
